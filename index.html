@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav {
+            display: flex;
+
+            width: 1520px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 35px;
+            align-items: center;
+            gap: 340px;
+            background-color: black;
+        }
+
+        .nav p {
+            color: green;
+            font-weight: 500;
+            font-size: x-large;
+            gap: 100px;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            color: white;
+        }
+
+        .btn {
+            background: #1FD2FF;
+            border-radius: 6px;
+            width: 86px;
+            height: 34px;
+            margin-left: 160px;
+        }
+
+        .nav ul li img {
+            opacity: 1px;
+        }
+
+        .box {
+            background-color: black;
+            display: flex;
+            height: auto;
+        }
+
+        .box1 {
+            border: 2px solid black;
+            padding: 100px;
+            margin: 100px;
+            color: white;
+        }
+
+        .box2 {
+            border: 2px solid black;
+        }
+
+        .box2 img {
+            height: 300px;
+            width: 400px;
+            margin: 120px 50px 100px 50px;
+        }
+
+        .btn1 {
+            background: rgb(17, 193, 251);
+            border-radius: 6px;
+            font-size: large;
+            font-weight: 500;
+            padding: 5px 20px;
+            margin-right: 10px;
+        }
+
+        .btn2 {
+            background: rgb(13, 188, 13);
+            border-radius: 6px;
+            font-size: large;
+            font-weight: 500;
+            padding: 5px 20px;
+        }
+
+        .box3 {
+            height: 80px;
+            width: auto;
+            background-color: black;
+        }
+
+        .color {
+            text-align: center;
+
+            font-weight: 500;
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        .q {
+            text-align: center;
+            font-weight: 500;
+            color: rgba(242, 245, 252, 1);
+            background-color: black;
+        }
+
+        .big-box1 {
+            display: flex;
+
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        .small-box1 h2 {
+            color: rgba(113, 218, 43, 1);
+            margin-top: 130px;
+
+            size: 40px;
+            font-weight: 700;
+        }
+
+        .small-box1 h4 {
+
+            margin-right: 50px;
+            color: white;
+
+        }
+
+
+        .small-box2 h2 {
+            color: rgba(113, 218, 43, 1);
+            margin-top: 130px;
+            margin-left: 70px;
+            size: 40px;
+            font-weight: 700;
+        }
+
+        .small-box2 h4 {
+            color: white;
+            margin-left: 70px;
+
+
+        }
+
+        .big-box2 {
+            height: 550px;
+            width: auto;
+
+            background-color: black;
+        }
+
+        .smallbox1 {
+            text-align: center;
+            color: greenyellow;
+            background-color: black;
+        }
+
+        .smallbox2 {
+            text-align: center;
+            ;
+            margin-top: 26px;
+        }
+
+        .big-container {
+            border-radius: 10px;
+            display: flex;
+            background-color: rgba(15, 26, 31, 1);
+            gap: 400px;
+            margin: 0 40px;
+        }
+
+        .big-container1 {
+            margin-top: 20px;
+
+        }
+
+        .smallbox2 h2 {
+            color: whitesmoke;
+            background-color: black;
+        }
+
+        .small-container1 {
+            padding: 0 0 0 20px;
+
+            height: auto;
+            width: auto;
+
+        }
+
+        .small-container2 h1 {
+            color: rgba(228, 253, 225, 1);
+            padding: 70px 0 0 0;
+
+        }
+
+        .small-container2 p {
+
+            color: darkolivegreen;
+            font-size: smaller;
+
+        }
+
+        .photos {
+            display: flex;
+            margin-top: 20px;
+            gap: 50px;
+
+        }
+
+        .clock img {
+            border-radius: 30px;
+        }
+
+        .line img {
+            border-radius: 30px;
+        }
+
+        .small1 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .small1 span {
+            color: lightblue;
+        }
+
+
+        .small2 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .small2 span {
+            color: lightblue;
+        }
+
+        .small3 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .small3 span {
+            color: lightblue;
+        }
+
+        .btn3 {
+            margin-top: 15px;
+            background-color: rgba(113, 218, 43, 1);
+            text-align: center;
+            border-radius: 12px;
+            width: 540px;
+            height: 54px;
+            font-weight: 500;
+            font-size: large;
+            padding: 2px 15px 2px 15px;
+        }
+
+        .con h3 {
+            color: rgba(228, 253, 225, 1);
+        }
+
+        .big-container1 {
+            outline: 2px solid black;
+            display: flex;
+            background-color: rgba(15, 26, 31, 1);
+            gap: 290px;
+        }
+
+        .btn4 {
+            margin-top: 15px;
+            background-color: rgba(84, 92, 80, 1);
+            text-align: center;
+            border-radius: 12px;
+            width: 540px;
+            height: 54px;
+            font-weight: 500;
+            font-size: large;
+            padding: 2px 15px 2px 15px;
+        }
+
+        .square {
+            background-color: black;
+
+
+        }
+
+        .square1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 90px 0 0 0;
+        }
+
+        .square2 {
+            background-color: black;
+            text-align: center;
+
+            padding: 30px 0 0 0;
+            color: white;
+            font-size: larger;
+        }
+
+        .card {
+            display: flex;
+            gap: 380px;
+            margin-top: 50px;
+        }
+
+        .card1 {
+            color: white;
+            padding: 50px 0 50px 30px;
+            width: 600px;
+        }
+
+        .card1 h2 {
+            color: rgba(113, 218, 43, 1);
+        }
+
+        .grid img {
+            position: relative;
+        }
+
+        .big-square {
+            background-color: black;
+            padding: 65px 0 120px 0;
+        }
+
+        .small-square1 {
+            text-align: center;
+            font-size: larger;
+            color: greenyellow;
+        }
+
+        .small-square2 {
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .big-card {
+            background-color: black;
+
+
+        }
+
+        .faq {
+            display: flex;
+            gap: 20px;
+            background-color: black;
+            outline: 2px solid rgb(30, 154, 196);
+            border-radius: 6px;
+            margin: 5px 35px 10px 35px;
+            padding: 10px 0;
+        }
+
+        .faq span {
+            color: white;
+        }
+
+        .faq img {
+            padding-left: 10px;
+
+        }
+
+        .faq1 {
+            display: flex;
+            gap: 20px;
+            background-color: black;
+            outline: 2px solid rgb(30, 154, 196);
+            border-radius: 6px;
+            margin: 5px 35px 70px 35px;
+            padding: 10px 0;
+        }
+
+        .faq1 span {
+            color: white;
+        }
+
+        .faq1 img {
+            padding-left: 10px;
+
+        }
+
+        .circle {
+            outline: 2px solid rgba(15, 26, 31, 1);
+            border-radius: 6px;
+            padding-top: 100px;
+            background-color: rgba(15, 26, 31, 1);
+            font-size: larger;
+            text-align: center;
+            height: 240px;
+        }
+
+        .circle p {
+            color: white;
+        }
+
+        .button {
+            background-color: rgba(255, 157, 0, 1);
+            border-radius: 12px;
+            padding: 8px 23px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        .lastsec {
+            background-image: url("corner grid pattern.png");
+            background-size: cover;
+            height: 180vh;
+            border: 2px solid;
+            background-color: black;
+        }
+
+        .lastsec1 {
+
+            text-align: center;
+            margin-top: 110px;
+            color: greenyellow;
+        }
+
+        .lastsec2 {
+
+            text-align: center;
+            margin-top: 40px;
+            color: white;
+            font-size: xx-large;
+        }
+
+        .cont-mask {
+            border: 1px solid black;
+            height: 650px;
+            margin-top: 30px;
+        }
+
+        .maskgrp {
+            border: 3px solid black;
+            height: 340px;
+            margin: 150px 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .smlcard {
+            height: 310px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: rgba(15, 26, 31, 1);
+            margin-top: 15px;
+            border-radius: 10px;
+
+        }
+
+        .smlcard .names {
+            color: rgba(228, 253, 225, 1);
+            padding-left: 100px;
+            margin-top: 30px;
+        }
+
+        .smlcard .man {
+            padding-left: 130px;
+        }
+
+        .smlcard .quote {
+            padding-left: 150px;
+        }
+
+        .smlcard .stars {
+            padding-left: 100px;
+            margin-top: 20px;
+
+        }
+
+        .smlcard .para {
+color: rgba(168, 218, 220, 1);
+            margin-top: 30px;
+            padding: 10px 10px;
+        }
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+        .smlcard1 {
+            height: 310px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: rgba(15, 26, 31, 1);
+            margin-top: 15px;
+            border-radius: 10px;
+            margin-left: -140px;
+        }
+
+        .smlcard1 .names {
+            color: rgba(228, 253, 225, 1);
+            padding-left: 75px;
+            margin-top: 30px;
+        }
+
+        .smlcard1 .man {
+            padding-left: 90px;
+        }
+
+        .smlcard1 .quote {
+            padding-left: 110px;
+        }
+
+        .smlcard1 .stars {
+            padding-left: 70px;
+            margin-top: 20px;
+
+        }
+
+        .smlcard1 .para {
+color: rgba(168, 218, 220, 1);
+            margin-top: 30px;
+            padding: 10px 10px;
+
+
+        }
+
+        .smlcard5 {
+            height: 310px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: rgba(15, 26, 31, 1);
+            margin-top: 15px;
+            border-radius: 10px;
+            margin-right: -140px;
+        }
+
+        .smlcard5 .names {
+            color: rgba(228, 253, 225, 1);
+            padding-left: 75px;
+            margin-top: 30px;
+        }
+
+        .smlcard5 .man {
+            padding-left: 90px;
+        }
+
+        .smlcard5 .quote {
+            padding-left: 110px;
+        }
+
+        .smlcard5 .stars {
+            padding-left: 70px;
+            margin-top: 20px;
+
+        }
+
+        .smlcard5 .para {
+color: rgba(168, 218, 220, 1);
+            margin-top: 30px;
+            padding: 10px 10px;
+
+
+        }
+
+        .bigcont {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+
+        .smallcont {
+            height: 450px;
+            width: 80%;
+            background: linear-gradient(90deg,
+                    rgba(113, 218, 43, 1),
+                    rgba(15, 44, 73, 1),
+                    rgba(31, 210, 255, 1))
+        }
+
+        .smallcont img {
+            padding: 70px 0 10px 550px;
+        }
+
+        .smallcont h1 {
+            display: flex;
+            justify-content: center;
+            color: rgba(168, 218, 220, 1);
+            font-size: xx-large;
+        }
+
+        .smallcont p {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            color: rgba(168, 218, 220, 1);
+            font-size: large;
+        }
+
+        .smallcont .but button {
+            text-align: center;
+            margin-left: 540px;
+            margin-top: 20px;
+            background: rgba(113, 218, 43, 1);
+            border-radius: 6px;
+            padding: 7px 30px;
+        }
+
+        .biglastdiv {
+            height: 600px;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small_div {
+            height: 450px;
+            width: 80%;
+
+
+        }
+
+        .header {
+            display: flex;
+            gap: 910px;
+        }
+
+        .socials img {
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .content {
+
+            height: auto;
+            width: auto;
+            display: flex;
+            gap: 200px;
+        }
+
+        .maincont {
+            display: flex;
+            gap: 80px;
+            margin: 30px 10px 30px 0;
+        }
+
+        .maincont ul li {
+            list-style: none;
+            color: whitesmoke;
+        }
+
+        .maincont h3 {
+
+            color: rgba(242, 245, 252, 1);
+        }
+
+        .subs {
+            background-color: rgba(15, 26, 31, 1);
+            border-radius: 10px;
+            margin: 15px 160px 10px 170px;
+            width: 270px;
+        }
+
+        .subscribe input {
+            background-color: rgba(13, 13, 18, 1);
+            margin-top: 20px;
+            padding: 5px 15px 5px 3px;
+            font-size: smaller;
+            font: DM Sans;
+        }
+
+        .subscribe h2 {
+            color: white;
+        }
+
+        .mail {
+            display: flex;
+
+        }
+
+        .arrow {
+            background-color: rgba(249, 168, 36, 1);
+            border-radius: 5px;
+            width: 55px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        .arrow img {
+            padding: 8px 0 0 16px;
+        }
+
+        .subs p {
+            margin-top: 15px;
+        }
+
+        .bigsub {
+            height: auto;
+            width: auto;
+
+            background-color: rgba(15, 26, 31, 1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="cc.png">
+
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Pricing</li>
+                <li>More <img src="down-arrow.png"></li>
+            </ul>
+
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <h1>Step up in AI future<br>with PracAI</h1>
+            <br>Embark a magical journey through Artificial Intelligence.
+
+            <br> <br> <br>
+            <button class="btn1">Start Free Trial</button>
+
+
+            <button class="btn2">Get Started</button>
+        </div>
+
+
+        <div class="box2">
+
+            <div class="image">
+                <img src="image.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="color">FEATURES</div><br>
+        <div class="q">Why choose PracAI?</div>
+        <div class="big-box1"><img src="Frame 387.png">
+            <img src="Frame 521.png">
+            <div class="small-box1">
+                <h2>Personalised Learning Paths</h2><br>
+                <h4>Tailor your unique journey based on your unique goals and interests</h4>
+            </div>
+
+        </div>
+
+
+        <div class="big-box1">
+
+            <div class="small-box2">
+                <h2>Interactive Progress Tracker</h2><br>
+                <h4>Earn badges,titles,and rewards based on skills and achievement</h4>
+            </div>
+            <img src="Frame 388.png">
+
+        </div>
+        <div class="big-box1"><img src="Frame 389.png">
+
+            <div class="small-box1">
+                <h2>Engaging Learning Experiences</h2><br>
+                <h4>Dive into AI concepts through gamified storytelling and interactive lessons</h4>
+            </div>
+        </div>
+
+        <div class="big-box2">
+            <div class="smallbox1">COURSES</div>
+            <div class="smallbox2">
+                <h2>What we have to offer?</h2>
+            </div>
+
+
+
+            <div class="big-container">
+                <div class="small-container1"><img src="Group.png">
+
+
+                </div>
+
+                <div class="small-container2">
+                    <h1>Artificial Intelligence<br>
+                        <p>Learn AI through fun,interactive sessions</p>
+                    </h1>
+                    <div class="photos">
+                        <div class="small1">
+                            <div class="clock"><img src="img3.png" alt="">
+
+                            </div>
+                            <div class="con"><span>Duration</span><br>
+                                <h3>4 Weeks</h3>
+                            </div>
+                        </div>
+                        <div class="small2">
+                            <div class="line"><img src="image (1).png" alt="">
+
+                            </div>
+                            <div class="con"><span>Level</span><br>
+                                <h3>Beginner</h3>
+                            </div>
+                        </div>
+
+                        <div class="small3">
+                            <div class="star"><img src="image (2).png" alt="">
+
+                            </div>
+                            <div class="con"><span>Rating</span><br>
+                                <h3>4.8/5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn3">View Course</button>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="big-container1">
+                <div class="small-container11"><img src="Group2.png">
+
+
+                </div>
+
+                <div class="small-container2">
+                    <h1>Python World<br>
+                        <p>Learn programming through games</p>
+                    </h1>
+                    <div class="photos">
+                        <div class="small1">
+                            <div class="clock"><img src="img3.png" alt="">
+
+                            </div>
+                            <div class="con"><span>Duration</span><br>
+                                <h3>6 Weeks</h3>
+                            </div>
+                        </div>
+                        <div class="small2">
+                            <div class="line"><img src="image (1).png" alt="">
+
+                            </div>
+                            <div class="con"><span>Level</span><br>
+                                <h3>Beginner</h3>
+                            </div>
+                        </div>
+
+                        <div class="small3">
+                            <div class="star"><img src="image (2).png" alt="">
+
+                            </div>
+                            <div class="con"><span>Rating</span><br>
+                                <h3>0/5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn4">Coming Soon</button>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="square">
+                <div class="square1">ABOUT US</div>
+                <div class="square2">Who we are?</div>
+
+                <div class="card">
+                    <div class="card1">
+                        <h2>Our Mission</h2>At PracAI,we're on a mission to make Artificial Intelligence
+                        fun,accessible,and meaningful for kids aged 12 and up.We simplify complex AI concepts through
+                        interactive,playful leaning experiences that spark curiosity,boost creativity,and build
+                        confidence. By blending imagination with education,we empower the next generation to understand
+                        and shape the future of technology.
+                    </div>
+                    <div class="card2"> <img src="Group123.png"></div>
+                </div>
+                <div class="grid"><img src="Perspective Grid.png" alt=""></div>
+
+            </div>
+            <div class="big-square">
+                <div class="small-square1">FREQUENCTLY ASKED QUESTION</div>
+                <div class="small-square2">Got Questions?</div>
+                <div class="big-card">
+                    <div class="faq"><img src="plus.png" alt=""> <span>What is PracAI?</span></div>
+                    <div class="faq"><img src="plus.png" alt=""> <span>How do i get started by PracAI?</span></div>
+                    <div class="faq"><img src="plus.png" alt=""> <span>What age group is PracAI suitable for?</span>
+                    </div>
+                    <div class="faq"><img src="plus.png" alt=""> <span>Do you offer group subscription?</span></div>
+                    <div class="faq1"><img src="plus.png" alt=""> <span>What support options are available?</span></div>
+
+                    <div class="circle">
+                        <p>Still got questions?We're happy to help</p>
+                        <button class="button">Contact Us</button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="lastsec">
+
+
+                <div class="lastsec1">REVIEWS</div>
+                <div class="lastsec2">What are Learners have to say?</div>
+                <div class="cont-mask">
+                    <section class="maskgrp">
+                        <div class="smlcard1">
+                            <div class="quote"><img src="Container6.png"></div>
+                            <div class="man"><img src="photos.png"></div>
+                            <div class="names">VIJAY RATHI</div>
+                            <div class="stars"><img src="SVG.png"><img src="SVG.png"><img src="SVG.png"><img
+                                    src="SVG.png"><img src="svg-69820393_245.png"></div>
+                            <div class="para">Very nice and understanding.Lorem ipsum Lorem ipsum</div>
+                        </div>
+                        <div class="smlcard">
+                            <div class="quote"><img src="Container6.png"></div>
+                            <div class="man"><img src="photos.png"></div>
+                            <div class="names">SHRSETH SHARMA</div>
+                            <div class="stars"><img src="SVG.png"><img src="SVG.png"><img src="SVG.png"><img
+                                    src="SVG.png"><img src="svg-69820393_245.png"></div>
+                            <div class="para">It is amazing. It teaches us
+                                about AI and also makes our </div>
+                        </div>
+                        <div class="smlcard">
+                            <div class="quote"><img src="Container6.png"></div>
+                            <div class="man"><img src="photos.png"></div>
+                            <div class="names">VIJAY RATHI</div>
+                            <div class="stars"><img src="SVG.png"><img src="SVG.png"><img src="SVG.png"><img
+                                    src="SVG.png"><img src="svg-69820393_245.png"></div>
+                            <div class="para">Very nice and understanding.Lorem ipsum Lorem ipsum</div>
+                        </div>
+                        <div class="smlcard">
+                            <div class="quote"><img src="Container6.png"></div>
+                            <div class="man"><img src="photos.png"></div>
+                            <div class="names">SHRSETH SHARMA</div>
+                            <div class="stars"><img src="SVG.png"><img src="SVG.png"><img src="SVG.png"><img
+                                    src="SVG.png"><img src="svg-69820393_245.png"></div>
+                            <div class="para">It is amazing. It teaches us
+                                about AI and also makes our </div>
+                        </div>
+                        <div class="smlcard5">
+                            <div class="quote"><img src="Container6.png"></div>
+                            <div class="man"><img src="photos.png"></div>
+                            <div class="names">VIJAY RATHI</div>
+                            <div class="stars"><img src="SVG.png"><img src="SVG.png"><img src="SVG.png"><img
+                                    src="SVG.png"><img src="svg-69820393_245.png"></div>
+                            <div class="para">Very nice and understanding.Lorem ipsum Lorem ipsum</div>
+                        </div>
+
+                    </section>
+
+
+                </div>
+            </div>
+            <div class="bigcont">
+                <div class="smallcont">
+                    <img src="Frame 522.png" alt="">
+                    <h1>Get Started</h1>
+                    <p>Sign Up for a free trial today</p>
+                    <div class="but"><button>Get Started</button></div>
+                </div>
+            </div>
+            <div class="biglastdiv">
+                <div class="small_div">
+                    <div class="header">
+                        <div class="cop"><img src="Frame 522.png" alt=""> </div>
+                        <div class="socials">
+
+                            <img src="Linkedin.png" alt="">
+                            <img src="Linkedin (1).png" alt="">
+                            <img src="Facebook.png" alt="">
+                            <img src="Twitter.png" alt="">
+
+
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="maincont">
+                            <div class="1">
+                                <h3>Company</h3>
+                                <ul>
+                                    <li>About us</li>
+                                    <li>Contact us</li>
+                                    <li>Pricing</li>
+
+
+
+                                </ul>
+
+
+                            </div>
+                            <div class="2">
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li>Courses</li>
+                                    <li>Newsletter</li>
+                                    <li>Terms & Conditions</li>
+
+
+
+                                </ul>
+
+
+                            </div>
+                            <div class="3">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li>Sign up</li>
+                                    <li>Sign in</li>
+                                    <li>Privacy Policy</li>
+
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="bigsub">
+                            <div class="subs">
+                                <div class="subscribe">
+                                    <h2>Subscribe</h2>
+                                    <div class="mail">
+                                        <input type="text" id="text" placeholder="Email address">
+                                        <div class="arrow"><img src="Path.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <p>Hello, we are ABC. trying to make an effort to put the right people for you to get
+                                    the best results. Just insight</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">2025 PracAI. All Rights Reserved</div>
+
+                </div>
+
+
+
+            </div>
+</body>
+
+</html>
